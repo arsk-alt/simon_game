@@ -19,7 +19,7 @@ $(document).keypress(function(event){
 });
 
 $(document).click(function(event){
-  if((!gameStarted){
+  if(!gameStarted){
     $("#level-title").text("Level " + level);
     nextSequence();
     gameStarted = true;
