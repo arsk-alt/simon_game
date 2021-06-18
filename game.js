@@ -18,6 +18,14 @@ $(document).keypress(function(event){
 
 });
 
+$(document).click(function(event){
+  if((!gameStarted){
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    gameStarted = true;
+  }
+});
+
 $(".btn").click(function(event){
   let userChosenColor = this.id;
   playSound(userChosenColor);
